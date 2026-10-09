@@ -278,7 +278,7 @@ a declaration of AI usage.
 
 ```bibtex
 @thesis{dudapu2026selective,
-  author      = {Dudapu, Madhusudhan},
+  author      = {Dudapu Madhusudhan},
   title       = {Selective Plasticity for Continual Learning in Spiking Neural Networks},
   type        = {Bachelor's thesis},
   institution = {Johannes Kepler University Linz},
