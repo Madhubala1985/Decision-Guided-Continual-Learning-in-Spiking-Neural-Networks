@@ -1,0 +1,139 @@
+DECISION-GUIDED CONTINUAL LEARNING IN SNNs — RESULTS
+==============================================================================
+
+block1_taskIL|ALIF   (n=1 seeds)
+   avg accuracy   0.6649 +- 0.0000
+   avg forgetting 0.4145 +- 0.0000
+   BWT            -0.4145 +- 0.0000
+   final acc      [0.618, 0.3506, 0.7503, 0.6133, 0.9924]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1851.1G  event=1851.1G  learned=100.0%
+
+block1_taskIL|ALIF+SI   (n=1 seeds)
+   avg accuracy   0.9870 +- 0.0000
+   avg forgetting 0.0064 +- 0.0000
+   BWT            -0.0064 +- 0.0000
+   final acc      [0.9991, 0.974, 0.9877, 0.9909, 0.9834]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1691.8G  event=1691.8G  learned=100.0%
+
+block1_taskIL|ALIF+SI+DM   (n=1 seeds)
+   avg accuracy   0.9901 +- 0.0000
+   avg forgetting -0.0021 +- 0.0000
+   BWT            +0.0027 +- 0.0000
+   final acc      [0.9991, 0.9829, 0.9968, 0.997, 0.9748]
+   actions        {'UPDATE': 23.2, 'CONSOLIDATE': 40.4, 'PROTECT': 7.2, 'IGNORE': 29.2}
+   synops         dense=1721.9G  event=1388.7G  learned=70.8%
+
+block1_taskIL|LIF   (n=1 seeds)
+   avg accuracy   0.7143 +- 0.0000
+   avg forgetting 0.3525 +- 0.0000
+   BWT            -0.3525 +- 0.0000
+   final acc      [0.8123, 0.4065, 0.8346, 0.5272, 0.9909]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1821.5G  event=1821.5G  learned=100.0%
+
+block2_control|ALIF+SI+Random   (n=1 seeds)
+   avg accuracy   0.9883 +- 0.0000
+   avg forgetting 0.0034 +- 0.0000
+   BWT            -0.0033 +- 0.0000
+   final acc      [0.9995, 0.9882, 0.9872, 0.993, 0.9738]
+   actions        {'UPDATE': 70.9, 'CONSOLIDATE': 0.0, 'PROTECT': 0.0, 'IGNORE': 29.1}
+   synops         dense=1822.8G  event=1468.9G  learned=70.9%
+
+block3_sweep|DM@ignore10   (n=1 seeds)
+   avg accuracy   0.9902 +- 0.0000
+   avg forgetting 0.0038 +- 0.0000
+   BWT            -0.0038 +- 0.0000
+   final acc      [0.9991, 0.9829, 0.9909, 0.9965, 0.9818]
+   actions        {'UPDATE': 23.2, 'CONSOLIDATE': 48.1, 'PROTECT': 14.9, 'IGNORE': 13.8}
+   synops         dense=1707.6G  event=1551.4G  learned=86.2%
+
+block3_sweep|DM@ignore25   (n=1 seeds)
+   avg accuracy   0.9901 +- 0.0000
+   avg forgetting -0.0021 +- 0.0000
+   BWT            +0.0027 +- 0.0000
+   final acc      [0.9991, 0.9829, 0.9968, 0.997, 0.9748]
+   actions        {'UPDATE': 23.2, 'CONSOLIDATE': 40.4, 'PROTECT': 7.2, 'IGNORE': 29.2}
+   synops         dense=1721.9G  event=1388.7G  learned=70.8%
+
+block3_sweep|DM@ignore50   (n=1 seeds)
+   avg accuracy   0.9888 +- 0.0000
+   avg forgetting 0.0037 +- 0.0000
+   BWT            -0.0036 +- 0.0000
+   final acc      [0.9991, 0.9731, 0.9941, 0.9975, 0.9803]
+   actions        {'UPDATE': 23.2, 'CONSOLIDATE': 22.8, 'PROTECT': 0.0, 'IGNORE': 54.1}
+   synops         dense=1720.2G  event=1103.6G  learned=45.9%
+
+block3_sweep|DM@ignore75   (n=1 seeds)
+   avg accuracy   0.9903 +- 0.0000
+   avg forgetting 0.0009 +- 0.0000
+   BWT            +0.0000 +- 0.0000
+   final acc      [0.9991, 0.9814, 0.9973, 0.9985, 0.9753]
+   actions        {'UPDATE': 22.3, 'CONSOLIDATE': 0.6, 'PROTECT': 0.0, 'IGNORE': 77.2}
+   synops         dense=1786.2G  event=871.8G  learned=22.8%
+
+block3_sweep|Rand@ignore10   (n=1 seeds)
+   avg accuracy   0.9899 +- 0.0000
+   avg forgetting 0.0017 +- 0.0000
+   BWT            -0.0006 +- 0.0000
+   final acc      [0.9995, 0.9814, 0.9941, 0.994, 0.9803]
+   actions        {'UPDATE': 90.0, 'CONSOLIDATE': 0.0, 'PROTECT': 0.0, 'IGNORE': 10.0}
+   synops         dense=1860.4G  event=1736.6G  learned=90.0%
+
+block3_sweep|Rand@ignore25   (n=1 seeds)
+   avg accuracy   0.9821 +- 0.0000
+   avg forgetting 0.0127 +- 0.0000
+   BWT            -0.0122 +- 0.0000
+   final acc      [1.0, 0.9745, 0.9733, 0.9859, 0.9768]
+   actions        {'UPDATE': 75.1, 'CONSOLIDATE': 0.0, 'PROTECT': 0.0, 'IGNORE': 24.9}
+   synops         dense=1864.0G  event=1554.0G  learned=75.1%
+
+block3_sweep|Rand@ignore50   (n=1 seeds)
+   avg accuracy   0.9882 +- 0.0000
+   avg forgetting 0.0023 +- 0.0000
+   BWT            -0.0023 +- 0.0000
+   final acc      [0.9991, 0.9848, 0.9947, 0.9909, 0.9718]
+   actions        {'UPDATE': 50.0, 'CONSOLIDATE': 0.0, 'PROTECT': 0.0, 'IGNORE': 50.0}
+   synops         dense=1793.5G  event=1195.6G  learned=50.0%
+
+block3_sweep|Rand@ignore75   (n=1 seeds)
+   avg accuracy   0.9862 +- 0.0000
+   avg forgetting 0.0029 +- 0.0000
+   BWT            -0.0026 +- 0.0000
+   final acc      [0.9981, 0.9789, 0.9957, 0.9899, 0.9682]
+   actions        {'UPDATE': 25.1, 'CONSOLIDATE': 0.0, 'PROTECT': 0.0, 'IGNORE': 74.9}
+   synops         dense=1735.5G  event=868.9G  learned=25.1%
+
+block4_classIL|ALIF+SI+DM/classIL   (n=1 seeds)
+   avg accuracy   0.1966 +- 0.0000
+   avg forgetting 0.9893 +- 0.0000
+   BWT            -0.9893 +- 0.0000
+   final acc      [0.0, 0.0, 0.0, 0.0015, 0.9813]
+   actions        {'UPDATE': 22.4, 'CONSOLIDATE': 38.2, 'PROTECT': 7.1, 'IGNORE': 32.4}
+   synops         dense=1964.6G  event=1544.3G  learned=67.6%
+
+block4_classIL|ALIF+SI/classIL   (n=1 seeds)
+   avg accuracy   0.2040 +- 0.0000
+   avg forgetting 0.9842 +- 0.0000
+   BWT            -0.9842 +- 0.0000
+   final acc      [0.0028, 0.0, 0.0, 0.0337, 0.9834]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1909.7G  event=1909.7G  learned=100.0%
+
+block4_classIL|ALIF/classIL   (n=1 seeds)
+   avg accuracy   0.1988 +- 0.0000
+   avg forgetting 0.9975 +- 0.0000
+   BWT            -0.9975 +- 0.0000
+   final acc      [0.0, 0.0, 0.0, 0.0, 0.9939]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1888.6G  event=1888.6G  learned=100.0%
+
+block4_classIL|LIF/classIL   (n=1 seeds)
+   avg accuracy   0.1977 +- 0.0000
+   avg forgetting 0.9966 +- 0.0000
+   BWT            -0.9966 +- 0.0000
+   final acc      [0.0, 0.0, 0.0, 0.0, 0.9884]
+   actions        {'UPDATE': 100.0}
+   synops         dense=1764.4G  event=1764.4G  learned=100.0%
+

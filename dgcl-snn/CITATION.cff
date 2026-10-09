@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis."
+title: "dgcl-snn: per-sample plasticity control for continual learning in spiking neural networks"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Dudapu
+    given-names: Madhusudhan
+preferred-citation:
+  type: thesis
+  title: "Selective Plasticity for Continual Learning in Spiking Neural Networks"
+  authors:
+    - family-names: Dudapu
+      given-names: Madhusudhan
+  thesis-type: "Bachelor's thesis"
+  institution:
+    name: "Johannes Kepler University Linz"
+  department: "Institute for Pervasive Computing"
+  year: 2026
